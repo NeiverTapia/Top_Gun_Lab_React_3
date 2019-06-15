@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
+import {BASE_LOCAL_ENDPOINT} from "../constants";
+import Character from '../components/Character';
 class CharacterList extends Component {
     constructor(props) {
         super(props);
@@ -21,7 +23,31 @@ class CharacterList extends Component {
          }
     }
 
-    getCharacters = () => {}
+    componentDidMount = () => {
+        this.getCharacters();
+    }
+
+    getCharacters = () => {
+        // Make a request for a user with a given ID
+        axios.get(`${BASE_LOCAL_ENDPOINT}/characters`)
+        .then(response => {
+            console.log(response)
+            this.setState({
+                characters: {
+                    content: response.data,
+                    error:""
+                }
+            });
+        })
+        .catch(error => {
+            this.setState({
+                createCharacterError:true
+            })
+        })
+        .finally(function () {
+        // always executed
+        });
+    }
 
     createCharacter = (e) => {}
 
@@ -57,6 +83,8 @@ class CharacterList extends Component {
             }
         } = this.state;
 
+
+
         return (
             <>  
                 <h2>Create Character</h2>
@@ -71,6 +99,7 @@ class CharacterList extends Component {
                     {this.createTextInput(image, 'image')}
                     <button type="submit">Create</button>
                 </form>
+                {/* {content} */}
             </>
         );
     }
