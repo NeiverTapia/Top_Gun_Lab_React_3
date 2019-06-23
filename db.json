@@ -399,6 +399,46 @@
       "gender": "Female",
       "origin": "Nuptia 4",
       "image": "https://rickandmortyapi.com/api/character/avatar/40.jpeg"
+    },
+    {
+      "name": "Neiver",
+      "location": "Medellin",
+      "status": "Nel",
+      "species": "Human",
+      "gender": "Female",
+      "origin": "Alive",
+      "image": "\"https://rickandmortyapi.com/api/character/avatar/40.jpeg",
+      "id": 41
+    },
+    {
+      "name": "Neiver",
+      "location": "Medellin",
+      "status": "Nel",
+      "species": "Human",
+      "gender": "Female",
+      "origin": "Alive",
+      "image": "\"https://rickandmortyapi.com/api/character/avatar/40.jpeg",
+      "id": 42
+    },
+    {
+      "name": "Juan",
+      "location": "Medellin",
+      "status": "Nel",
+      "species": "Human",
+      "gender": "Female",
+      "origin": "Alive",
+      "image": "\"https://rickandmortyapi.com/api/character/avatar/40.jpeg",
+      "id": 43
+    },
+    {
+      "name": "Sulay",
+      "location": "Medellin",
+      "status": "Nel",
+      "species": "Human",
+      "gender": "Female",
+      "origin": "Alive",
+      "image": "\"https://rickandmortyapi.com/api/character/avatar/40.jpeg",
+      "id": 44
     }
   ]
 }
